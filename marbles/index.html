@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="marbles/src/css/styles.css">
+        <script type="importmap">
+        {
+            "imports": {
+                "playcanvas": "https://cdn.jsdelivr.net/npm/playcanvas/+esm"
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <script type="module" src="marbles/src/js/main.js"></script>
+        <div id="container">
+            <canvas id='application'></canvas>
+            <div id="controls-container">
+                <div id="controls">
+                    <h1>Start your race!</h1>
+                    <div>
+                        <h2><label for="participants">Add participants</label></h2>
+                        <textarea id="participants">Alice&#13;&#10;Bob&#13;&#10;Charlie</textarea>
+                    </div>
+                    <button id="button-start">GO!</button>
+                </div>
+            </div>
+        </div>
+        <dialog id="winner-dialog">
+            <div id="winner-announcement">
+                <span id="winner-name">Someone</span> won!
+            </div>
+        </dialog>
+    </body>
+</html>
